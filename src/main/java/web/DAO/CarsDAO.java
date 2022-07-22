@@ -1,6 +1,7 @@
-package web.model;
+package web.DAO;
 
 import org.springframework.stereotype.Component;
+import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
