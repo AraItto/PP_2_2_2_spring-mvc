@@ -13,12 +13,12 @@ public class CarsCountService {
 
     private CarsDAO carsList;
 
-    @Autowired
     public CarsCountService(CarsDAO carsList) {
         this.carsList = carsList;
     }
 
     public List<Car> getCarsByCount(int count) {
-        return carsList.getCarsList().stream().limit(count).collect(Collectors.toList());
+        if (count > 5) {count = 5;}
+        return carsList.getCarsList().subList(0, count);
     }
 }

@@ -13,7 +13,6 @@ public class CarController {
 
     private CarsCountService carsCountService;
 
-    @Autowired
     public CarController(CarsCountService carsCountService) {
         this.carsCountService = carsCountService;
     }
